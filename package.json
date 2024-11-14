@@ -20,5 +20,8 @@
   "workspaces": [
     "lib/getRandomEmoji",
     "custom-elements/random-emojifier"
-  ]
+  ],
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
 }
