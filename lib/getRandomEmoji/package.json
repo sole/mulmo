@@ -1,0 +1,11 @@
+{
+  "name": "getrandomemoji",
+  "version": "1.0.0",
+  "description": "Return a random emoji",
+  "main": "getRandomEmoji.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sole",
+  "license": "MPL-2.0"
+}

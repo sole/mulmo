@@ -1,0 +1,12 @@
+{
+  "name": "random-emojifier",
+  "version": "1.0.0",
+  "description": "A custom element that inserts emoji in its children",
+  "main": "random-emojifier.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sole",
+  "license": "MPL-2.0"
+}
