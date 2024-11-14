@@ -17,14 +17,11 @@ export default class RandomEmojifier extends HTMLElement {
 
 	async render() {
         let nodes = this.children;
-        console.log(nodes);
-        console.log(this.childNodes, Array.from(this.children))
         let leaves = this.findChildLeaves();
-        console.log(leaves);
+
         leaves.forEach(leaf => {
             let textContent = leaf.textContent;
-            console.log(textContent);
-            let replacedVowels = this.replaceVowelsWithEmoji(textContent);
+            let replacedVowels = this.replaceOsWithEmoji(textContent);
             leaf.textContent = replacedVowels;
         });
 	}
@@ -40,11 +37,10 @@ export default class RandomEmojifier extends HTMLElement {
         return leaves;
     }
 
-    replaceVowelsWithEmoji(str) {
-        let vowels = 'aeiou'.split('');
+    replaceOsWithEmoji(str) {
         let letters = str.split('');
         let replaced = letters.map(letter => {
-            if(vowels.indexOf(letter) !== -1) {
+            if(letter.toLowerCase() === 'o') {
                 return getRandomEmoji();
             } else {
                 return letter;
